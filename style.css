@@ -1,0 +1,14 @@
+#memory {
+    max-width:26rem;
+}
+
+#memory img {
+    margin-bottom: 20px;
+    border: thin solid black;
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+}
+#memory #footer {
+    text-align: center;
+}
