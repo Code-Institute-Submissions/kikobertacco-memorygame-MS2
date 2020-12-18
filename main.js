@@ -12,6 +12,7 @@ let flippedCard = false;
 let positionFlippedCard = -1;
 let imageFlippedCard = 0;
 let score = 0;
+const timerGame = new timer('#timer');
 
 onload = () => {
     // Load backDeck images
@@ -40,6 +41,7 @@ const restartGame = () => {
     elemImages.forEach((img, _i) => {
         img.onclick = clickImage;
         img.style.opacity = 1;
+        img.src = backDeck;
     });
 //-----------------------------
 // redefinition of game state
@@ -52,6 +54,8 @@ score = 0;
 
 // interface adjust
 document.querySelector('#start').disabled = true;
+document.querySelector('#timer').style.backgroundColor = 'yellow';
+timerGame.start();
 
 };
 // process click event on image
@@ -81,7 +85,7 @@ const clickImage = (e) => {
         img.onclick = clickImage;
         blockClick = false;
 
-    }, 3000);
+    }, 1700);
 
         }
 
@@ -92,7 +96,36 @@ const clickImage = (e) => {
 
     if (score == 8) {
         document.querySelector('#start').disabled = false;
-    }
+        document.querySelector('#timer').style.backgroundColor = 'lightgreen';
+        timerGame.stop ();
 
+    }
 };
+//----------------------------------------
+//Timer
+//----------------------------------------
+function timer (e) {
+    this.element = e;
+    this.time = 0;
+    this.control = null;
+    this.start = () => {
+        this.time = 0;
+        this.control = setInterval( () => {
+            this.time++;
+            const minutes = Math.trunc(this.time/60);
+            const seconds = this.time % 60;
+            document.querySelector(this.element).innerHTML = 
+            (minutes < 10 ? '0':'') + 
+             minutes +
+             ':' + 
+            (seconds < 10 ? '0':'') + 
+            seconds;  
+        }, 1000);
+    };
+    this.stop = () => {
+        clearInterval(this.control);
+        this.control = null;
+    };
+      
+}
 
