@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
+body {
+    background-color: #dce9e7;
+}
+h1 {
+    font-family: 'Andika New Basic', sans-serif;
+    
+}
+
 #memory {
     max-width:26rem;
 }
