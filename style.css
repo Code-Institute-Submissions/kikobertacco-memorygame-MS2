@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
 body {
-    background-color: #dce9e7;
+    background-color: #0f5c9b;
 }
 h1 {
     font-family: 'Andika New Basic', sans-serif;
+    color: aliceblue;
     
 }
 

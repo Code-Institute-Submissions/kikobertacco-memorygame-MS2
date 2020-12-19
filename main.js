@@ -24,11 +24,12 @@ onload = () => {
             img.style.opacity = 0.5;
         });
      //------------------------------------------   
-    // Creates event of shuffle cards-restart game
+    // Creates event of shuffle cards/start game
     //-------------------------------------------
     document.querySelector('#start').onclick = restartGame;
 };
 const restartGame = () => {
+    alert('Try to match all cards as fast as you can! Once you start the game, you can not restart it until you match all cards. Pay attention at the details! good luck!');
 
     for (let i = 0; i < cards.length; i++) {
         let p = Math.trunc(Math.random() * cards.length);
@@ -85,7 +86,7 @@ const clickImage = (e) => {
         img.onclick = clickImage;
         blockClick = false;
 
-    }, 1700);
+    }, 1000);
 
         }
 
@@ -98,6 +99,7 @@ const clickImage = (e) => {
         document.querySelector('#start').disabled = false;
         document.querySelector('#timer').style.backgroundColor = 'lightgreen';
         timerGame.stop ();
+        alert('Congratulations! You found them all!!');
 
     }
 };
