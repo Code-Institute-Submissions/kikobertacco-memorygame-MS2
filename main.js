@@ -2,8 +2,8 @@
 let images = [];
 
 for (let i = 1; i <= 8; i++)
-    images.push(`http://picsum.photos/id/${i}/80/90`);
-let backDeck = 'http://picsum.photos/80/90?grayscale';
+    images.push(`http://picsum.photos/seed/${i}/80/80`);
+let backDeck = 'http://picsum.photos/id/1056/80/80?grayscale';
 
 // Game state
 let cards = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
@@ -29,7 +29,7 @@ onload = () => {
     document.querySelector('#start').onclick = restartGame;
 };
 const restartGame = () => {
-    alert('Try to match all cards as fast as you can! Once you start the game, you can not restart it until you match all cards. Pay attention at the details! good luck!');
+    alert('Try to match all cards as fast as you can! Once you start the game, you can not restart it until you match all the cards. Good luck!');
 
     for (let i = 0; i < cards.length; i++) {
         let p = Math.trunc(Math.random() * cards.length);
@@ -96,13 +96,15 @@ const clickImage = (e) => {
     }    
 
     if (score == 8) {
+        alert('Congratulations! You found them all!!');
         document.querySelector('#start').disabled = false;
         document.querySelector('#timer').style.backgroundColor = 'lightgreen';
         timerGame.stop ();
-        alert('Congratulations! You found them all!!');
-
+        
     }
+
 };
+    
 //----------------------------------------
 //Timer
 //----------------------------------------

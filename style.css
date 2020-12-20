@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
 body {
-    background-color: #0f5c9b;
+    background-color: #1a5a8fd8;
+    height: 300px;
+    width: 500px;
+    margin:auto;
+    
 }
 h1 {
     font-family: 'Andika New Basic', sans-serif;
-    color: aliceblue;
-    
+    color: aliceblue;   
 }
 
 #memory {
     max-width:26rem;
+    margin-top: 25px;
 }
 #memory #timer {
     font-family: Arial, Helvetica, sans-serif;
@@ -27,6 +31,6 @@ h1 {
     height: 90px;
     border-radius: 6px;
 }
-#memory #footer {
+#footer {
     text-align: center;
-}
+}    
