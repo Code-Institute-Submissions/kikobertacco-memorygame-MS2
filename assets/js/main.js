@@ -2,8 +2,8 @@
 let images = [];
 
 for (let i = 1; i <= 8; i++)
-    images.push(`http://picsum.photos/seed/${i}/80/80`);
-let backDeck = 'http://picsum.photos/id/1056/80/80?grayscale';
+    images.push(`https://picsum.photos/seed/${i}/80/80`);
+let backDeck = 'https://picsum.photos/id/1056/80/80?grayscale';
 
 // Game state
 let cards = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
