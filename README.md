@@ -7,8 +7,9 @@ It's also relevant to to say that only 2(two) cards can be flipped per play.
 # UX
 The goal of this project is to create a simple memory card game using Javascript language. This game can be played by adults and children above 10 years old.
 
-###Player Goals
+### Player Goals
 The player should match all 8(eight) pairs of cards as fast as possible, exercising his/her memory skills.
+As an user of this game I would like to be able to entertain myself and practice memory skills on any device and have direct and precise information about the game.
 I've decided to design this game with a card board of 16 cards and a timer that runs progressively, allowing the players to follow their progress and to stimulate them to play more than once.
 The mockup of this project can be found on the mockup folder.
 
