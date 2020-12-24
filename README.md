@@ -35,7 +35,8 @@ For last, I also would like to implement the style of the pop-up messages.
 
 # Testing
 In order to check its funcionality, I tested the game on different browsers: Chrome, Firefox and Safari.
-Responsiveness was checked by Chrome dev tools, and it looked right, but when I tested in devive Samsung 8, Samsung S10 and Samsung J6, the display was a bit out of place, but it could be easily adjusted by a little zoom out.
+Responsiveness was checked by Chrome dev tools, and it looked right, but when I tested in devives Samsung 8, Samsung S10 and Samsung J6, the display was a bit out of place, but it could be easily adjusted by a little zoom out.
+I also tested on Samsung Galaxy pad, and no major problems were detect.
 For HTML was used W3c Markup validator service, and it pointed 16 errors reffering to element img(missing required "src" atribute), but that was expected as all the images were imported by "picsum.photo" api and processed on the main.js file.
 CSS 3 was validated through W3C validation service and no errors were detected.
 JShint was used to validate javascript code, and despite detecting 33 warnings, no erros were found.
@@ -45,3 +46,14 @@ Screen shots of validation can be seeing on the validation paste.
 The site is deployed on GitHub pages from the master branch and will update automatically upon new commits. It can be accessed via https://kikobertacco.github.io/memorygame-MS2/.
 
 # Credits
+The content of this game was mostly created by me. 
+The images were taken from picsum.photos api.
+Inspiration for this project came from youtube videos as:
+https://www.youtube.com/watch?v=Rk4J-d7sPKQ&t=1179s&ab_channel=C%C3%B3digodeEstagi%C3%A1rio
+https://www.youtube.com/watch?v=Y4lOwOOK7yE&ab_channel=CodingHack
+https://www.youtube.com/watch?v=28VfzEiJgy4&ab_channel=WebDevSimplified
+
+## Acknowledgements
+This game is part of the Interactive Fronted Development milestone Project from Code Institute, and it has only educational purposes.
+Would like to thank Professor Marcos Kutova for his precious tips and advices on Javascript and for suggesting me to use https://picsum.photos/ for randon images.
+I also would like to give an special thanks to my mentor Brian Macharia, for helping me and most of all given me the motivation that was missing at the beggining of this project. 
