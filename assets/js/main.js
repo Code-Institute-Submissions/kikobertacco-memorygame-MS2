@@ -96,14 +96,16 @@ const clickImage = (e) => {
     }    
 
     if (score == 8) {
-        alert('Congratulations! You found them all!!');
+        
         document.querySelector('#start').disabled = false;
         document.querySelector('#timer').style.backgroundColor = 'lightgreen';
         timerGame.stop ();
         
+        
     }
-
+    
 };
+
     
 //----------------------------------------
 //Timer
