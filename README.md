@@ -53,7 +53,20 @@ For last, I also would like to implement the style of the pop-up messages.
 For HTML was used W3c Markup validator service, and no errors were found.
 CSS 3 was validated through W3C validation service and no errors were found, but 2 issues were detected.
 JShint was used to validate javascript code, and despite detecting 33 warnings, no erros were found.
-Screen shots of validation can be seeing on the validation paste.
+Screen shots of validation can be seeing on the validation folder.
+
+### User stories Testing
+1. As an user at this game, I would like to be able to entertain myself playing a memory card game.
+* This game has been manually tested in different devices and browsers to check if cards were flipping correctly at the click on image and if  no more than 2 cards could be flipped at the time and it worked correctly.
+
+2. As an user of this game, I want to be able to practice my memory skills.
+* The manual test was done in different devices and browsers to check if cards were were matching correctly as well as shuffling every time that a new game was started. Tests demonstrated that it work as planned.
+
+3. As an user of this game, I would like to play the game at anytime in any device.
+* Responsiveness was checked by Chrome dev tools, and it looked right, but when I tested in devives Samsung 8, Samsung S10 and Samsung J6, the display was a bit out of place, but it could be easily adjusted by a little zoom out, without affect its functionality. I also tested on Samsung Galaxy pad and mac book pro and no major problems were detect. 
+
+4. As a player of this game, I would like to be stimulated to match the cards as fast as possible. 
+* The manual tests were done to check if the timer was working correctly, if it was yellow color when starts running progressivily and if it stoped and turned green when all cards were matched. Again, the tests revealed that timer worked as planned. 
 
 # Deployment
 The site is deployed on GitHub pages from the master branch and will update automatically upon new commits. It can be accessed via https://kikobertacco.github.io/memorygame-MS2/.
