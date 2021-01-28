@@ -1,21 +1,36 @@
 # Memory Card Game
-This is a memory card game where the player must click on a card and try to match it's pair as fast as possible.
-Once the player clicks on the start button, a message will pop-up with a short explanation of the game. When the message tab is closed the timer starts running. Once the game starts the player can not restart it until all cards  pairs are matched. This feature was made on purpose so it will make a little harder for the player. However, if the player wats restart the game that xan be done by refreshing the page.
-When the last pair of cards is matched, a message pops up informing the player that all pairs where found and timer stops couting.
-It's also relevant to to say that only 2(two) cards can be flipped per play.
+This is a memory card game thet was ceated with javascript language for educational purposes. The goal of this project is to create a simple memory game where the player can entertain him/herself and at the same time practice/improve memory skills.
 
 # UX
-The goal of this project is to create a simple memory card game using Javascript language. This game can be played by adults and children above 10 years old.
 
-### Player Goals
-The player should match all 8(eight) pairs of cards as fast as possible, exercising his/her memory skills.
-As an user of this game I would like to be able to entertain myself and practice memory skills on any device and have direct and precise information about the game.
-I've decided to design this game with a card board of 16 cards and a timer that runs progressively, allowing the players to follow their progress and to stimulate them to play more than once.
-The mockup of this project can be found on the mockup folder.
+Ideal User:
+The ideal users for this game would be adults and children above 10 years old.
+
+1. As an user at this game, I would like to be able to entertain myself playing a memory card game.
+2. As an user of this game, I want to be able to practice my memory skills.
+3. As an user of this game, I would like to play the game at anytime in any device.
+4. As a plaer of this game, I would like to be stimulated to match the cards as fast as possible. 
+
+### Strategy
+The goal of this project was to create a memory card game, where the user can entertain him/herself and practice memory skills at anytime in anyplace.
+
+### Scope
+This game game can be played at different devices suchs as desktops, laptops, tablets and cel phones, due it's responsiveness. As matching the cards as fast as possible is the goal at the game, a progressive timer has been added with the purpose to stimulate the player to improve memory skills by allowing him/her to track the time that has been taken to match all the cards.
+
+### Structure
+When the player starts the game by clicking the start button, a pop-up message shows up with basic instructions. Once the pop-up box is closed the timer turns to yellow color and starts running progressivilly.
+As soon that all the cards are matched, the timer stops and turns to green color, indicating that the game is finished.
+
+### Skeleton
+The mockup of this project can be find above at the "skeleton" folder.
+
+### Surface
+The layout of this project can be find above at the "surface" folder.
 
 # Features
 The game has a card borad 16 cards with 8 different images. Also, besides a timer that runs progressively there's a start button, that when is clicked shows a message with instructions.
-As soon as all the cards are matched, the timer stops running, and a message pops up saying that the game has been complete.
+As soon as the pop-up box with instructions is closed, the timer starts runing and it's color change to yellow.
+When the player match all the cards, timer stops and turn it color to green.
 
 ### Features to be implemented
 For the future I would like to change the timer to a regressive mode(for ex. 02:00 minutes to find all cards) and then I would like to create new levels increasing difficulty with less time (for ex. 01:00 minute to match all cards). I think that would estimulate the player to think faster and improve memory skills.
